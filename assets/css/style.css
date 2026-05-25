@@ -48,6 +48,7 @@ header{
        padding: 10px;
        border-radius: 10px;
        transition:0.10s;
+       margin-left: 20px;
 }
 
 h1{
@@ -56,3 +57,72 @@ h1{
        margin:0 0 10px;
 }
 
+section{ 
+       padding:40px 40px 20px 20px;
+       max-width: 800px;
+       margin:0 auto;
+}
+/* classe para espaçamento superior na imagem */
+.foto{
+       margin-top: 20px;
+}
+
+.secao-dois{
+           background-color: #dbe8f0;
+           max-width:100% ;
+}
+
+.container-central{
+           max-width:800px ;
+           margin:0 auto;
+}
+
+h2{
+       color:rgb(31, 42, 136);
+       border-left: 4px solid rgb(15, 154, 235);
+       padding-left: 15px;
+}
+
+ul{
+       list-style:none ;
+       padding: 0;
+       margin-top: 15px;
+}
+
+li{
+       background-color: #97b5c7;
+       padding: 12px 18px;
+       margin-bottom: 8px;
+       border-radius: 25px;
+       border-left: 5px solid rgb(8, 8, 119);
+}
+
+footer{
+       background-color: rgb(4, 4, 59);
+       color:white;
+       text-align: center;
+       cursor:default;
+       padding-top: 15px;
+}
+
+.botao{
+       display: inline-block;
+       background-color: #97b5c7;
+       color: rgb(4, 4, 59);
+       padding: 8px 15px;
+       border-radius: 25px;
+       text-decoration: none;
+       font-weight: bold;
+       margin:15px 0;
+}
+
+li:hover,.botao:hover{
+            background-color: Turquoise;
+            cursor:pointer;
+}
+
+span{
+       font-weight: bold;
+       font-size: 15px;
+       color:rgb(247, 248, 248);
+}
