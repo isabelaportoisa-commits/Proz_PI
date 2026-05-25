@@ -40,12 +40,12 @@ header{
                 color:whitesmoke;
                 text-decoration: none;
                 font-weight: bold;
-            }
+}
 
 .menu-navegacao a:hover,.ativo{
        border-bottom: 2px solid #97b5c7;
        background-color: rgb(36, 107, 170);
-       padding: 10px;
+       padding: 5px;
        border-radius: 10px;
        transition:0.10s;
        margin-left: 20px;
@@ -64,7 +64,7 @@ section{
 }
 /* classe para espaçamento superior na imagem */
 .foto{
-       margin-top: 20px;
+       margin-top: 25px;
 }
 
 .secao-dois{
@@ -125,4 +125,13 @@ span{
        font-weight: bold;
        font-size: 15px;
        color:rgb(247, 248, 248);
+}
+/*finalmente o icone deu certo vou detruir esse código*/
+nav a{
+       display:inline-flex;
+       gap:10px;
+}
+a img{
+       width: 18px;
+       height: 18px;
 }
