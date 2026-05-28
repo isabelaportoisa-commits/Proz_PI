@@ -79,7 +79,7 @@ section{
 
 h2{
        color:rgb(31, 42, 136);
-       border-left: 4px solid rgb(15, 154, 235);
+       border-bottom: 2px solid rgb(15, 154, 235);
        padding-left: 15px;
 }
 
@@ -98,22 +98,25 @@ li{
 }
 
 footer{
+       font-size: 15px;
        background-color: rgb(4, 4, 59);
        color:white;
        text-align: center;
        cursor:default;
-       padding-top: 15px;
+       padding-top: 10px;
 }
-
+footer p{
+       margin: 0;
+}
 .botao{
        display: inline-block;
        background-color: #97b5c7;
        color: rgb(4, 4, 59);
-       padding: 8px 15px;
-       border-radius: 25px;
+       padding: 8px 8px;
+       border-radius: 20px;
        text-decoration: none;
        font-weight: bold;
-       margin:15px 0;
+       margin:8px 0;
 }
 
 li:hover,.botao:hover{
@@ -126,12 +129,54 @@ span{
        font-size: 15px;
        color:rgb(247, 248, 248);
 }
-/*finalmente o icone deu certo vou detruir esse código*/
+/*finalmente o icone deu certo não vou detruir esse código*/
 nav a{
        display:inline-flex;
        gap:10px;
 }
+/* inversão de cor do icone black for white */
 a img{
        width: 18px;
        height: 18px;
+       filter:brightness(0) invert(1);
+}
+
+.lista-acoes{
+       display:grid;
+}
+
+.formulario{
+       max-width: 400px;
+       margin:20px auto;
+       padding:25px 60px;
+       background-color: #f8f9fa;
+       border-radius: 12px;
+       border: 1px solid #ddd;
+}
+
+.formulario input{
+       width: 100%;
+       padding: 12px;
+       margin-bottom: 20px;
+       border:1px solid #ccc ;
+       border-radius: 6px;
+       height: 15px;
+}
+p{
+       margin: 20px;
+}
+
+.decoracao{       
+       color:rgb(31, 42, 136);
+       border-bottom: 2px dotted rgb(15, 154, 235);
+       padding-left: 15px;
+}
+
+/*classe para padronização imagem planeta terra*/
+.planeta{   
+       display: block;
+       margin: 0 auto;
+       width: 250px ;
+       height:auto;
+       filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
 }
