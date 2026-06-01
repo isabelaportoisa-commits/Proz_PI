@@ -4,6 +4,11 @@
            font-weight: normal;
            
 }
+@font-face{
+           font-family:"negrito" ;
+           src:url("/assets/fonts/Cousine-Bold.ttf") format("truetype");
+           font-weight: normal;       
+}
 
 *{ 
     margin:0;
@@ -17,6 +22,10 @@ body{
      line-height: 1.7;
 }
 
+section p{   font-family: "negrito";
+     text-align: justify;
+
+}
 header{
        background-color:  #acc2d8;
        text-align: center;
@@ -217,6 +226,7 @@ p{
     justify-content:center;
     align-items:center;
     text-align:center;
+    font-size: 14px;
     transition:0.5s;
 }
 
