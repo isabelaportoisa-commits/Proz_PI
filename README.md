@@ -1,51 +1,55 @@
-🌍 Água: Nosso Bem Mais Precioso 💧
+VisionTech: Tecnologia e Meio Ambiente na Indústria 4.0
+
 Projeto desenvolvido para o Projeto Integrador da Liga STEAM / ArcelorMittal.
 
-Conscientização ambiental através da tecnologia 🌱
+Inovação e sustentabilidade caminhando juntas 🌍
 
-📖 Sobre o Projeto
-Este projeto foi criado com o objetivo de conscientizar as pessoas sobre a importância da economia de água e do consumo responsável.
+Sobre o Projeto
 
-Através de um site desenvolvido em HTML e CSS, nossa equipe busca mostrar como pequenas atitudes podem gerar grandes impactos no futuro do planeta.
+O VisionTech foi desenvolvido com o objetivo de conscientizar sobre a importância da sustentabilidade na indústria moderna e demonstrar como as tecnologias da Indústria 4.0 podem contribuir para a preservação do meio ambiente.
+Por meio de um site desenvolvido com tecnologias web, buscamos apresentar soluções inovadoras que auxiliam na redução de desperdícios, no uso eficiente dos recursos naturais e na construção de um futuro mais sustentável.
 
-🚀 Tecnologias Utilizadas
-  
+Tecnologias Utilizadas
 
-🎯 Objetivos
-Incentivar o uso consciente da água
-Desenvolver habilidades em programação web
-Trabalhar em equipe
-Criar um projeto tecnológico com impacto social
-💡 Funcionalidades do Site
-📱 Página inicial estilo cartaz
-📖 Página explicando a campanha
-✅ Página com ações sustentáveis
-🔗 Navegação entre páginas
-🎨 Layout estilizado com CSS
-👩‍💻 Equipe
-Integrante	Função
-Alexandre	Desenvolvimento
-📂 Estrutura do Projeto
-projeto/
-│
-├── index.html
-├── sobre.html
+<p align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+</p>
+
+Objetivos
+Promover a conscientização ambiental no setor industrial.
+Apresentar os conceitos da Indústria 4.0.
+Demonstrar como a tecnologia pode reduzir impactos ambientais.
+Desenvolver habilidades em programação web.
+Criar um projeto tecnológico com impacto social.
+
+Funcionalidades do Site
+
+Página inicial interativa.
+Página sobre a Indústria 4.0.
+Página sobre os desafios ambientais da indústria.
+Página apresentando tecnologias sustentáveis.
+Página com soluções para um futuro sustentável.
+Navegação responsiva entre páginas.
+
+Estrutura do Projeto
+VisionTech/ 
+│ 
+├── assets/ 
+│ └── css/
+│ └── fonts/
+│ └── img/
+│ └── js/
 ├── acoes.html
-│
-├── css/
-│   └── style.css
-│
-├── imagens/
-│
+├── cards.html
+├── sobre.html
+├── index.html
+│ 
 └── README.md
-✅ Progresso do Projeto
- Criar repositório
- Fazer README
- Estruturar páginas HTML
- Adicionar CSS completo
- Melhorar responsividade
- Publicar projeto
-🌱 Mensagem da Equipe
-“Cada gota economizada hoje ajuda a construir o amanhã.” 💧
 
-Feito com dedicação pela nossa equipe ❤️
+Mensagem da Equipe
+
+"A tecnologia tem o poder de transformar a indústria. Quando aliada à sustentabilidade, ela ajuda a construir um futuro mais inteligente, eficiente e responsável para todos."
+
+Feito com dedicação para promover inovação e consciência ambiental.
