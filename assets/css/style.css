@@ -1,13 +1,7 @@
-@font-face{
-           font-family:"Cousine" ;
-           src:url("/assets/fonts/Cousine-Regular.ttf") format("truetype");
-           font-weight: normal;
-           
-}
-@font-face{
-           font-family:"negrito" ;
-           src:url("/assets/fonts/Cousine-Bold.ttf") format("truetype");
-           font-weight: normal;       
+@font-face {
+       font-family: "Inter";
+       src: url("/assets/fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+       font-weight: normal;
 }
 
 *{ 
@@ -16,13 +10,13 @@
 }
 
 body{
-     font-family:"Cousine";
+     font-family:"Inter";
      color: #333333;
      background-color: rgb(241,248,248);
      line-height: 1.7;
 }
 
-section p{   font-family: "negrito";
+section p{  
      text-align: justify;
 
 }
@@ -126,9 +120,11 @@ footer p{
        text-decoration: none;
        font-weight: bold;
        margin:8px 0;
+       transition:transform 0.9s;
 }
 
 li:hover,.botao:hover{
+            transform: translateX(10px);
             background-color: Turquoise;
             cursor:pointer;
 }
@@ -172,7 +168,7 @@ a img{
        height: 15px;
 }
 p{
-       margin: 20px;
+       margin: 20px 0;
 }
 
 .decoracao{       
@@ -227,9 +223,33 @@ p{
     align-items:center;
     text-align:center;
     font-size: 14px;
-    transition:0.5s;
+    transition:0.9s;
 }
 
 .minicard:hover .texto-hover{
     bottom:0;
+}
+
+.lista-acoes{
+       display:grid;
+       grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+       gap:15px;
+       margin: 20px, 0;
+}
+
+.acao-item{
+       font-size: 14px;
+       margin-top: 20px;
+       background-color:#97b5c7 ;
+       padding:20px;
+       border-radius: 8px;
+       border-top: 3px solid rgb(4, 4, 59) ;
+       text-align: center;
+       transition:transform 0.4s;
+}
+
+.acao-item:hover{
+       transform: translateY(-5px);
+       background-color: turquoise;
+
 }
