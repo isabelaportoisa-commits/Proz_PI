@@ -6,7 +6,6 @@
 
 *{ 
     margin:0;
-    box-sizing: border-box;
 }
 
 body{
@@ -16,10 +15,21 @@ body{
      line-height: 1.7;
 }
 
+/* somente nas seções*/
 section p{  
      text-align: justify;
-
+     margin: 30px 20px;
 }
+
+.minip{
+       color:rgb(8, 8, 119);
+       text-align: center;
+       font-weight: bold;
+       background-color:#93c4f5;
+       border-radius: 8px;
+       padding: 8px;
+}
+
 header{
        background-color:  #acc2d8;
        text-align: center;
@@ -146,10 +156,6 @@ a img{
        filter:brightness(0) invert(1);
 }
 
-.lista-acoes{
-       display:grid;
-}
-
 .formulario{
        max-width: 400px;
        margin:20px auto;
@@ -186,13 +192,44 @@ p{
        filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
 }
 
+/*página ações*/
+.lista-acoes{
+       display:grid;
+       grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+       gap:15px;
+       margin: 20px 0;
+}
+.acao-item{
+       font-size: 14px;
+       font-weight: bold;
+       margin-top: 20px;
+       background-color:#97b5c7 ;
+       padding:20px;
+       border-radius: 8px;
+       border-top: 3px solid rgb(4, 4, 59) ;
+       transition:transform 0.4s;
+}
+.acao-item p{
+    text-align: left;
+    margin: 10px 0 0;
+    line-height: 1.6;
+}
+
+.acao-item:hover{
+       transform: translateY(-5px);
+       background-color: turquoise;
+
+}
+
+
 /*customização minicards da section---- Porque a campanha*/
 
-.custom-minicard{
+.custom-minicard{         
            display: flex;
            justify-content: center;
            gap:20px;
            flex-wrap: wrap;
+        
 }
 
 .minicard{
@@ -205,6 +242,7 @@ p{
     position:relative;
     overflow:hidden;
     cursor:pointer;
+    box-sizing: border-box;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -230,26 +268,3 @@ p{
     bottom:0;
 }
 
-.lista-acoes{
-       display:grid;
-       grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
-       gap:15px;
-       margin: 20px, 0;
-}
-
-.acao-item{
-       font-size: 14px;
-       margin-top: 20px;
-       background-color:#97b5c7 ;
-       padding:20px;
-       border-radius: 8px;
-       border-top: 3px solid rgb(4, 4, 59) ;
-       text-align: center;
-       transition:transform 0.4s;
-}
-
-.acao-item:hover{
-       transform: translateY(-5px);
-       background-color: turquoise;
-
-}
