@@ -90,7 +90,7 @@ section{
            margin:0 auto;
 }
 
-h2{
+.tit-secao{
        color:rgb(31, 42, 136);
        border-bottom: 2px solid rgb(15, 154, 235);
        padding-left: 15px;
@@ -144,12 +144,12 @@ span{
        font-size: 15px;
        color:rgb(247, 248, 248);
 }
-/*finalmente o icone deu certo não vou detruir esse código*/
+/*finalmente o icone deu certo */
 nav a{
        display:inline-flex;
        gap:10px;
 }
-/* inversão de cor do icone black for white */
+/* inversão de cor do icone de navegação de preto para branco */
 a img{
        width: 18px;
        height: 18px;
@@ -183,7 +183,7 @@ p{
        padding-left: 15px;
 }
 
-/*classe para padronização imagem planeta terra*/
+/*classe para padronização imagem planeta terra--onu*/
 .planeta{   
        display: block;
        margin: 0 auto;
@@ -206,7 +206,7 @@ p{
        background-color:#97b5c7 ;
        padding:20px;
        border-radius: 8px;
-       border-top: 3px solid rgb(4, 4, 59) ;
+       border-top: 5px solid rgb(4, 4, 59) ;
        transition:transform 0.4s;
 }
 .acao-item p{
@@ -268,3 +268,150 @@ p{
     bottom:0;
 }
 
+/**customização dos Cards da página cards seção tecnologias que fazem a diferença**/
+.divisao{
+           display: flex;
+           justify-content: center;
+           gap:60px;
+           flex-wrap: wrap;
+
+}
+
+.capsula{
+    perspective: 3000px;
+}
+
+.card{
+    width: 280px;
+    height: 420px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .8s ease-in-out;
+    cursor:pointer;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 1px rgba(0,0,0,0.05);
+    border-radius: 15px;
+}
+
+.card:hover{
+     transform: rotateY(180deg);
+}
+.frente,.verso{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+.frente{
+        background-size:cover;
+        background-position: center;
+}
+.informacao{
+        position: absolute;
+        bottom:50px;
+        left:45px;
+        color:#fff;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulo{
+        font-style: 2rem;
+        font-weight: bold;
+}
+
+.subtitulo{
+        font: size 1.2rem;
+        margin-top: 5px;
+        color:rgb(243, 244, 245);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verso{
+    background-color:rgb(4, 4, 59);
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.conteiner-card{
+    text-align: center;
+    padding:20px;
+    max-width: 300px;
+}
+
+.conteiner-card{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descricao{
+    font-size: 1rem;
+    color:#97b5c7 ;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.botao-card{
+    background-color: turquoise;
+    color:#fff;
+    padding:12px 24px;
+    font-size: 1rem;
+    border:none;
+    border-radius: 25px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-card:hover{
+    background-color: transparent;
+    color:#0fbcf9;
+    border:1px solid #0fbcf9;
+}
+/** container empresa página cards**/
+#container-empresas{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    margin-top:30px;
+}
+
+.empresa{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.empresa img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+}
+
+.empresa-info h3{
+    color:rgb(31, 42, 136);
+    margin-bottom:10px;
+}
+
+.empresa-info p{
+    margin:0 0 10px;
+}
+
+.empresa-info a{
+    color:blue;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.empresa-info a:hover{
+    color:rgb(15,154,235);
+}
