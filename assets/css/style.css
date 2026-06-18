@@ -365,6 +365,7 @@ p{
 }
 
 .verso{
+
     background-color:rgb(4, 4, 59);
     color:#fff;
     display:flex;
@@ -374,7 +375,7 @@ p{
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-.conteiner-card,h3{
+.conteiner-card{
     text-align: center;
     padding:20px;
     max-width: 300px;
