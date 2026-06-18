@@ -21,15 +21,6 @@ section p{
      margin: 30px 20px;
 }
 
-.minip{
-       color:rgb(8, 8, 119);
-       text-align: center;
-       font-weight: bold;
-       background-color:#93c4f5;
-       border-radius: 8px;
-       padding: 8px;
-}
-
 header{
        background-color:  #acc2d8;
        text-align: center;
@@ -133,7 +124,7 @@ footer p{
        transition:transform 0.9s;
 }
 
-li:hover,.botao:hover{
+li:hover{
             transform: translateX(10px);
             background-color: Turquoise;
             cursor:pointer;
@@ -156,23 +147,72 @@ a img{
        filter:brightness(0) invert(1);
 }
 
+/*customização formulário*/
 .formulario{
        max-width: 400px;
        margin:20px auto;
        padding:25px 60px;
        background-color: #f8f9fa;
-       border-radius: 12px;
-       border: 1px solid #ddd;
+       border-radius: 15px;
+       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .formulario input{
        width: 100%;
        padding: 12px;
        margin-bottom: 20px;
-       border:1px solid #ccc ;
-       border-radius: 6px;
+       border:1px solid #1d1c1c ;
+       border-radius: 8px;
        height: 15px;
+       transition: 0.3s;
 }
+.formulario input:focus{
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13,110,253,0.3);
+}
+
+.formulario h3{
+    text-align: center;
+    color: rgb(31, 42, 136);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.formulario input.erro{
+    border: 2px solid red;
+}
+
+.formulario input.sucesso{
+    border: 2px solid green;
+}
+
+.mensagem-retorno.erro{
+    color: red;
+}
+
+.mensagem-retorno.sucesso{
+    color: green;
+}
+/*botão somente formulário*/
+.botform{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(31, 42, 136);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botform:hover{
+    background: #0d92e6;
+    transform: translateY(-2px);
+}
+
 p{
        margin: 20px 0;
 }
@@ -220,8 +260,6 @@ p{
        background-color: turquoise;
 
 }
-
-
 /*customização minicards da section---- Porque a campanha*/
 
 .custom-minicard{         
@@ -229,7 +267,6 @@ p{
            justify-content: center;
            gap:20px;
            flex-wrap: wrap;
-        
 }
 
 .minicard{
@@ -274,7 +311,6 @@ p{
            justify-content: center;
            gap:60px;
            flex-wrap: wrap;
-
 }
 
 .capsula{
@@ -317,12 +353,12 @@ p{
 }
 
 .titulo{
-        font-style: 2rem;
+        font-size: 1.8rem;
         font-weight: bold;
 }
 
 .subtitulo{
-        font: size 1.2rem;
+        font-size: 1.2rem;
         margin-top: 5px;
         color:rgb(243, 244, 245);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -338,22 +374,19 @@ p{
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-.conteiner-card{
+.conteiner-card,h3{
     text-align: center;
     padding:20px;
     max-width: 300px;
-}
-
-.conteiner-card{
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
 .descricao{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color:#97b5c7 ;
-    margin-bottom: 20px;
+    margin: 10px 0 25px 0;
     line-height: 1.6;
 }
 

@@ -31,27 +31,66 @@ if(container){
         }
 }
 //formulário
-const form=document.getElementById("formulario-adesao");
-const msg=document.getElementById("mensagem-retorno");
+const form = document.getElementById("formulario-adesao");
+const msg = document.getElementById("mensagem-retorno");
 
-console.log(msg)
-if (form){
+if (form) {
+
     form.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-            e.preventDefault();
-            
-            if(form.checkValidity()) {
-                const nome = document.getElementById("nome").value
-                msg.textContent = ` Parabéns,${nome}! Sua adesão registrada com sucesso.`
-                msg.className = 'mensagem-retorno sucesso'
-                form.reset()
-            }else{
-                msg.textContent = 'Favor preencha os campos corretamente.';
-                msg.className = 'mensagem-retorno erro';
-                msg.style.display = 'block';
-            }    
+        const nomeInput = document.getElementById("nome");
+        const emailInput = document.getElementById("email");
+        const telefoneInput = document.getElementById("telefone");
+
+        const nome = nomeInput.value.trim();
+        const email = emailInput.value.trim();
+        const telefone = telefoneInput.value.trim();
+//validar
+        const nomeValido = nome.split(" ").length >= 2;
+
+        const emailValido =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        const telefoneValido =
+             telefone.replace(/\D/g, "").length === 11;
+
+//limpar classes
+        [nomeInput, emailInput, telefoneInput].forEach(campo => {
+            campo.classList.remove("erro", "sucesso");
+        });
+
+        if (nomeValido) {
+            nomeInput.classList.add("sucesso");
+        } else {
+            nomeInput.classList.add("erro");
         }
-    )
+        if (emailValido) {
+            emailInput.classList.add("sucesso");
+        } else {
+            emailInput.classList.add("erro");
+        }
+        if (telefoneValido) {
+            telefoneInput.classList.add("sucesso");
+        } else {
+            telefoneInput.classList.add("erro");
+        }
+        if (nomeValido && emailValido && telefoneValido) {
+
+            msg.textContent =
+                `Parabéns, ${nome}! Sua adesão foi registrada com sucesso.`;
+
+            msg.className = "mensagem-retorno sucesso";
+            form.reset();
+            [nomeInput, emailInput, telefoneInput].forEach(campo => {
+                campo.classList.remove("sucesso"); });
+        } else {
+
+            msg.textContent =
+                "Favor preencher os campos corretamente.";
+
+            msg.className = "mensagem-retorno erro";
+        }});
 }
 //minicards página inical e página cards
 const problemas=[
@@ -80,7 +119,7 @@ function criaCards(lista,idContainer){
                 <h3>${item.centro}</h3>
                 <div class="texto-hover"> ${item.texto}</div>
             </div>
-            ` ;
+ ` ;
     });
 }
 
@@ -92,7 +131,7 @@ const tecnologias=[
     {
         titulo: "Inteligência Artificial",
         subtitulo: "IA",
-        descricao: "Auxilia na análise de dados e na otimização de processos industriais.",
+        descricao: "👨‍💻Auxilia na análise de dados e na otimização de processos industriais.",
         imagem: "assets/img/Ia.jfif",
         link: "https://www.ibm.com/br-pt/topics/artificial-intelligence"
     },
@@ -100,15 +139,15 @@ const tecnologias=[
     {
         titulo: "Internet das Coisas",
         subtitulo: "IoT",
-        descricao: "Sensores inteligentes monitoram equipamentos e recursos em tempo real.",
+        descricao: "📡Sensores inteligentes monitoram equipamentos e recursos em tempo real.",
         imagem: "assets/img/iot.jpeg",
-        link: "https://aws.amazon.com/pt/what-is/iot/"
+        link: "https://aws.amasensorm/pt/what-is/iot/"
     },
 
     {
         titulo: "Automação Industrial",
         subtitulo: "Aut. Ind.",
-        descricao: "Melhora a produtividade e reduz erros, evitando desperdícios.",
+        descricao: "🛠🛠 Melhora a produtividade e reduz erros, evitando desperdícios.",
         imagem: "assets/img/automacao.jpg",
         link: "https://www.produttivo.com.br/blog/automacao-industrial/"
     },
@@ -116,7 +155,7 @@ const tecnologias=[
     {
         titulo: "Computação em Nuvem",
         subtitulo: "Cloud",
-        descricao: "Facilita o gerenciamento de dados e reduz infraestrutura física.",
+        descricao: "Facilita o gerenciamento de dados e reduz infraestrutura física 🖥",
         imagem: "assets/img/nuvem.jpg",
         link: "https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-cloud-computing"
     }
